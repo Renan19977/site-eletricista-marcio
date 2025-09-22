@@ -267,3 +267,33 @@ footer a {
 #scroll-to-top:hover {
     background-color: #ff9900;
 }
+
+/* --- Estilo para Celulares --- */
+@media (max-width: 600px) {
+
+    /* Faz o menu do cabeçalho ficar vertical */
+    .header .container {
+        flex-direction: column;
+    }
+
+    /* Faz as fotos do portfólio ficarem uma embaixo da outra */
+    .portfolio-item .images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Faz as fotos ocuparem a largura total da tela do celular */
+    .portfolio-item .images img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* Ajusta a fonte e o padding para telas pequenas */
+    #banner h2 {
+        font-size: 2rem;
+    }
+    .btn-whatsapp {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
